@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin Sketch', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Kodchasan', sans-serif;
+font-family: 'Merienda', cursive;
+font-family: 'Open Sans', sans-serif;
+}
+
+body {
+   
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+/* menu */
+
+.title h1 {
+    padding: 20px 0;
+    text-align: left;
+    font-size: 2.9em;
+    text-transform: uppercase;
+}
+.ulopciones {
+    display: flex;
+    align-items: baseline;
+}
+
+/* CONTAINER */
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.contenedor.menu, .informacion, .contenedor.producto, .contenedor.footer, .contenedor>div {
+    background: none;
+    padding: 20px;
+    border: 1px none;
+}
+.contenedor>.menu,.contenedor>.footer {
+    grid-column: 1/-1;
+    background-color: #a71aa7;
+    color: #ffffff;
+}
+.contenedor>.informacion {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.informacion>.article {
+    background: none;
+    padding: 20px;
+    margin-top: 5px;
+    color: #06435e
+    
+}
+
+.informacion .article h1,
+.informacion .article p {
+    padding: 10px;
+}
+.contenedor>.producto {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: #f1c3f1;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    list-style-position: center;
+}
+.contenedor .producto img {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+}
+.contenedor>.producto {
+    background: #d682e7;
+    color: #ffffff;
+    height: 180px;
+    ;
+    display: flex;
+    align-items: center;
+    list-style-position: center;
+    transition: all 0.5s ease;
+}
+.contenedor>.producto:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+.contenedor .informacion {
+        grid-column: 1 / -1;
+    }
+.contenedor .producto {
+        grid-column: 1 / 6;
+    }
+
+.contenedor .producto {
+        grid-column: 1/-1;
+    }
+}
+#citas{ 
+    display:flex;
+}
