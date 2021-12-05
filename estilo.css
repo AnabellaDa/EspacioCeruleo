@@ -43,7 +43,7 @@ body {
     align-items: baseline;
 }
 
-/* CONTAINER */
+
 
 .contenedor {
     width: 90%;
@@ -87,8 +87,8 @@ body {
     background: #f1c3f1;
     color: #ffffff;
     display: flex;
-    align-items: center;
-    list-style-position: center;
+    align-items: left;
+    list-style-position: left;
 }
 .contenedor .producto img {
     display: flex;
@@ -127,7 +127,4 @@ body {
 .contenedor .producto {
         grid-column: 1/-1;
     }
-}
-#citas{ 
-    display:flex;
 }
